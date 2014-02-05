@@ -17,6 +17,7 @@ dependence
 % git clone https://github.com/e-jigsaw/yky-with-jgs.git
 % cd yky-with-jgs
 % npm i
+% bower i
 % gulp --require coffee-script/register
 ```
 
