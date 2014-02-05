@@ -4,11 +4,10 @@ calcDiff = ->
 
   diffYear = today.diff(ultraHappyDay, "year")
   diffMonth = today.diff(ultraHappyDay, "month")
-  diffDay = today.diff(ultraHappyDay, "day")
 
   diff =
     year: diffYear
-    month: diffMonth - (12 * diffYear)
+    month: diffMonth - (12 * diffYear) - 1
 
 $(document).ready ->
   diff = calcDiff()
