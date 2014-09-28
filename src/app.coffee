@@ -1,9 +1,9 @@
 calcDiff = ->
-  ultraHappyDay = moment "2011-10-01 +0900", "YYYY-MM-DD Z"
+  ultraHappyDay = moment '2011-10-01 +0900', 'YYYY-MM-DD Z'
   today = moment()
 
-  diffYear = today.diff(ultraHappyDay, "year")
-  diffMonth = today.diff(ultraHappyDay, "month")
+  diffYear = today.diff(ultraHappyDay, 'year')
+  diffMonth = today.diff(ultraHappyDay, 'month')
 
   diff =
     year: diffYear
@@ -11,7 +11,7 @@ calcDiff = ->
 
 $(document).ready ->
   diff = calcDiff()
-  $("h1").text "#{diff.year}年#{diff.month}ヶ月"
-    .addClass "active"
-  $("#content").addClass "active"
-  $("footer").addClass "active"
+  $('h1').text '#{diff.year}年#{diff.month}ヶ月'
+    .addClass 'active'
+  $('#content').addClass 'active'
+  $('footer').addClass 'active'
