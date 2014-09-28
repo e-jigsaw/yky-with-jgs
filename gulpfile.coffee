@@ -9,7 +9,7 @@ watch = require "gulp-watch"
 styl = require "gulp-stylus"
 deploy = require "gulp-gh-pages"
 
-gulp.task "default", ["coffee", "concat", "jade", "styl"], ->
+gulp.task "default", ["connect", "coffee", "concat", "jade", "styl"], ->
 
 gulp.task "coffee", ->
   gulp.src "src/*.coffee"
