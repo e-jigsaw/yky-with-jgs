@@ -7,8 +7,9 @@ jade = require "gulp-jade"
 connect = require "gulp-connect"
 watch = require "gulp-watch"
 styl = require "gulp-stylus"
+deploy = require "gulp-gh-pages"
 
-gulp.task "default", ["connect", "coffee", "concat", "jade", "styl"], ->
+gulp.task "default", ["coffee", "concat", "jade", "styl"], ->
 
 gulp.task "coffee", ->
   gulp.src "src/*.coffee"
@@ -48,5 +49,9 @@ gulp.task "connect", connect.server(
 gulp.task "clean", ->
   gulp.src ["tmp/", "build/"]
     .pipe clean()
+
+gulp.task "deploy", ["default"], ->
+  gulp.src ["build/*"]
+    .pipe deploy()
 
 gulp.watch "tmp/app.js", ["concat"]
