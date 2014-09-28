@@ -7,7 +7,7 @@ calcDiff = ->
 
   diff =
     year: diffYear
-    month: diffMonth - (12 * diffYear) - 1
+    month: diffMonth - (12 * diffYear)
 
 $(document).ready ->
   diff = calcDiff()
