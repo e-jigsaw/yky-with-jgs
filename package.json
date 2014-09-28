@@ -2,6 +2,9 @@
   "name": "yky-with-jgs",
   "version": "0.0.0",
   "description": "How long yky with jgs",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp --require coffee-script/register"
+  },
   "devDependencies": {
     "gulp-coffee": "~1.4.1",
     "gulp-jade": "~0.4.1",
