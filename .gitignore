@@ -1,5 +1,4 @@
 bower_components
 node_modules
-index.html
-javascripts
-stylesheets
+build
+tmp
