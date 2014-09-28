@@ -3,7 +3,7 @@ yky-with-jgs
 
 How long yky with jgs
 
-# http://e-jigsaw.github.io/yky-with-jgs/
+# http://ykjg.github.io/how-long/
 
 ## develop
 
@@ -14,8 +14,8 @@ dependence
 ## build
 
 ```
-% git clone https://github.com/e-jigsaw/yky-with-jgs.git
-% cd yky-with-jgs
+% git clone https://github.com/ykjg/how-long.git
+% cd how-long
 % npm i
 % bower i
 % gulp --require coffee-script/register
