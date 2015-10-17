@@ -1,0 +1,75 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html body {
+  font-family: "helvetica neue", helvetica, arial;
+  background-color: #f0f0f0;
+}
+html body #content {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  width: 100%;
+}
+html body #content h1 {
+  font-size: 260px;
+  text-align: center;
+  color: #444;
+}
+@media (max-width: 1279px) {
+  html body #content h1 {
+    font-size: 180px;
+  }
+}
+@media (max-width: 1000px) {
+  html body #content h1 {
+    font-size: 130px;
+  }
+}
+@media (max-width: 680px) {
+  html body #content h1 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 480px) {
+  html body #content h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 320px) {
+  html body #content h1 {
+    font-size: 50px;
+  }
+}
+html body #content p {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+html body #content.active {
+  top: 50%;
+}
+html body footer {
+  -webkit-transform: translate(-50%, -50px);
+  -moz-transform: translate(-50%, -50px);
+  -o-transform: translate(-50%, -50px);
+  transform: translate(-50%, -50px);
+  transition: all 0.5s ease-out 0.5s;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  opacity: 0.4;
+}
+html body footer.active {
+  top: 90%;
+}
